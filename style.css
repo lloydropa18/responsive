@@ -1,0 +1,193 @@
+/* global  */
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 20px;
+}
+p {
+    font-size: 1.3rem;
+}
+img {
+    max-width: 100%;
+}
+a{
+    transition: .3s ease color;
+}
+a:hover{
+    color: blue;
+}
+
+
+/* nav-bar */
+header h1{
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+.center .nav-list a {
+    display: inline-block;
+    padding: 8px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+/* end of nav-bar */
+
+/* profile */
+#home {
+    margin-top: 20px;
+}
+/* end of profile */
+
+
+/* portfolio */
+#portfolio .left  p {
+    margin-bottom: 60px;
+}
+/* end of portfolio */
+
+
+/* skills */
+#skills img{
+    max-width: 35%;
+    margin-bottom: 20px;
+}
+#skills {
+    border-bottom: 1px solid black;
+}
+/* end skills */
+
+/* contact */
+#contact {
+    border-bottom: 1px solid black;
+}
+/* end contact */
+
+/* footer */
+.d-block {
+    display: none;
+}
+#footer .right{
+    float: right;
+}
+#footer .left{
+    float: left;
+}
+/* end footer */
+
+/* clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* media query for tablets */
+@media only screen and (min-width:700px){
+    body {
+        margin: 0 40px;
+    }
+    /* nav-bar */
+    #nav-bar .nav-list li {
+        display: inline-block;
+    }
+    /* end of nav-bar */
+    /* profile */
+    #home .right{
+        float: right;
+        width: 50%;
+    }
+    #home .left {
+        float: left;  
+        width: 50%; 
+    }
+    #home p {
+        text-align: left;
+    }
+    /* end profile */
+    /* portfolio */
+    #portfolio h1 {
+        padding: 50px;
+    }
+    #portfolio .col1 {
+        float: left;
+        width: 48%;
+    }
+    #portfolio p {
+        height: 100px;
+      }
+    #portfolio .col2 {
+        float: right;
+        width: 48%;
+    }
+    /* end of portfolio */
+    /* footer */
+    #footer .d-block {
+        display: block;
+    }
+    .d-block li  {
+        display: inline;
+    }
+    .d-block li a{
+        display: inline-block;
+        font-size: 1.2em;
+        line-height: 1;
+        padding-left: 20px;
+        margin: 20px 0;
+    }
+    .d-none{
+        display: none;
+    }
+    /* end footer */
+}
+
+
+/* media query for desktop */
+@media only screen and (min-width:1200px){
+    /* nav-bar */
+    #nav-bar .right{
+        float: right;
+    }
+    #nav-bar .right a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 2.4em;
+    }
+    #nav-bar .left{
+        float: left;
+        font-size: 1.4em;
+    }
+    /* end nav-bar */
+     /* profile */
+    #home .right{
+        float: right;
+        width: 48%;
+    }
+    #home .left {
+        float: left;  
+        width: 48%;
+        margin-right: 2%; 
+    }
+    #home p {
+        text-align: left;
+        font-size: 1.8em;
+    }
+    /* end profile */
+    /* portfolio */
+    #portfolio .primary,
+    #portfolio .secondary,
+    #portfolio .tertiary{
+        float: left;
+        width: 33%;
+    }
+    #portfolio .primary,
+    #portfolio .secondary{
+        margin-right: .5%;
+    }
+    /* end of portfolio */
+
+}
